@@ -5,20 +5,20 @@ metadata:
     architecture: x86_64
     authoritative-source-url: registry.access.redhat.com
     build-date: 2020-03-31T14:54:13.907559
-    commit.image.appsody.dev/author: matthewpwilson <matthew.wilson@uk.ibm.com>
-    commit.image.appsody.dev/committer: josiemundi <johannasaladas@gmail.com>
+    commit.image.appsody.dev/author: josiemundi <johannasaladas@gmail.com>
+    commit.image.appsody.dev/committer: GitHub <noreply@github.com>
     commit.image.appsody.dev/contextDir: /order-command-ms
-    commit.image.appsody.dev/date: Mon May 18 07:55:24 2020 +0000
-    commit.image.appsody.dev/message: Fix unit tests (#70)
+    commit.image.appsody.dev/date: Wed May 20 08:12:51 2020 +0000
+    commit.image.appsody.dev/message: 'Merge pull request #1 from matthewpwilson/appsody'
     commit.stack.appsody.dev/contextDir: /incubator/java-openliberty
     commit.stack.appsody.dev/date: Mon May 11 09:22:47 2020 +0100
     commit.stack.appsody.dev/message: 'java-openliberty: fix stack validate (#805)'
     description: Eclipse MicroProfile & Jakarta EE on Open Liberty & OpenJ9 using
       Maven
     distribution-scope: public
-    image.opencontainers.org/created: "2020-05-18T08:25:49Z"
+    image.opencontainers.org/created: "2020-05-29T09:07:43Z"
     image.opencontainers.org/documentation: https://github.com/josiemundi/refarch-kc-order-ms
-    image.opencontainers.org/revision: bb08b5a985b197369fedf6b3728c97e605c32f75
+    image.opencontainers.org/revision: 4787dacb3fc728b99501ae113a966298899baffd
     image.opencontainers.org/source: https://github.com/josiemundi/refarch-kc-order-ms/tree/master
     image.opencontainers.org/url: https://github.com/josiemundi/refarch-kc-order-ms
     k8s.io/description: The Universal Base Image is designed and engineered to be
@@ -61,9 +61,9 @@ metadata:
     stack.appsody.dev/version: 0.2.12
   name: order-command-ms-app
 spec:
-  applicationImage: dev.local/order-command-ms-app
+  applicationImage: josiemundi/order-command-ms
   createKnativeService: false
-  env: 
+  env:
   - name: KAFKA_BROKERS
     valueFrom:
       configMapKeyRef:
